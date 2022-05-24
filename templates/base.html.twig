@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="../assets/styles/app.css">
+    </head>
+    <body>
+    <div id="tsparticles"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.6/tsparticles.bundle.min.js"></script>
+    <script type="text/javascript">
+        tsParticles.load("tsparticles", {
+            background: {
+                color: "#000",
+            },
+            interactivity: {
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "push"
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse"
+                    },
+                },
+                modes: {
+                    push: {
+                        quantity: 6,
+                    },
+                    repulse: {
+                        distance: 600,
+                    },
+                },
+            },
+            particles: {
+                links: {
+                    enable: true,
+                    opacity: 0.5,
+                    distance: 200,
+                },
+                move: {
+                    enable: true,
+                    speed: { min: 0.5, max: 1 },
+                },
+                opacity: {
+                    value: { min: 0.2, max: 1.5 },
+                },
+                size: {
+                    value: { min: 1, max: 5 },
+                },
+            },
+        });
+    </script>
+        {% block body %}{% endblock %}
+    </body>
+</html>
