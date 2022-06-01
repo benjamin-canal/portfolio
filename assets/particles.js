@@ -1,6 +1,6 @@
 tsParticles.load("tsparticles", {
     background: {
-        color: "#000",
+        opacity: 1,
     },
     interactivity: {
         events: {
