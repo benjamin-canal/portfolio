@@ -1,22 +1,12 @@
 tsParticles.load("tsparticles", {
-    background: {
-        opacity: 1,
-    },
     interactivity: {
         events: {
-            onClick: {
-                enable: true,
-                mode: "push"
-            },
             onHover: {
                 enable: true,
                 mode: "repulse"
             },
         },
         modes: {
-            push: {
-                quantity: 1,
-            },
             repulse: {
                 distance: 80,
             },
