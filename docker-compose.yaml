@@ -12,7 +12,7 @@ services:
         networks:
             - portfolio
 
-    phpmyadmin:
+    adminer:
         image: adminer
         container_name: adminer-symfony
         restart: always
