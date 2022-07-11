@@ -42,7 +42,7 @@ services:
           - "7741:80"
         volumes:
             - ./php/vhosts:/etc/apache2/sites-enabled
-            - ./:/var/www
+            - ./:/var/www/html
         restart: always
         networks:
             - dev
