@@ -42,7 +42,7 @@ services:
           - "7741:80"
         volumes:
             - ./php/vhosts:/etc/apache2/sites-enabled
-            - ./portfolio
+            - ./:/var/www/html/portfolio
         restart: always
         networks:
             - portfolio
