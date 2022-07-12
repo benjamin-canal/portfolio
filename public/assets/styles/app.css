@@ -1,7 +1,9 @@
-body {
-    background-color: black;
+/*  Ovveride bootstrap CSS*/
+
+.card-text {
+    color: black;
 }
 
-#tsparticles {
-    background-color: black;
+.card-title {
+    color: black;
 }
