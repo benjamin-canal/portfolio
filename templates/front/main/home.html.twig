@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Acceuil{% endblock %}
+{% block title %}BC-Portfolio{% endblock %}
 
 {% block body %}
 
@@ -8,8 +8,8 @@
         <div class="container"><a class="navbar-brand" href="#">Accueil</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">A Propos</a></li>
-                    <li class="nav-item nav-link"><a class="nav-link" href="#download">Download</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#a-propos">A Propos</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#projets">Projets</a></li>
                     <li class="nav-item nav-link"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -20,30 +20,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h1 class="brand-heading">Benjamin Canal</h1>
-                        <p class="intro-text">Développer PHP / Symfony.<br>Pour en savoir plus c'est par là!</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                        <h1 class="brand-heading">Bienvenue !</h1>
+                        <p class="intro-text">Moi c'est Benjamin et vous êtes ici chez moi, alors faites comme chez vous!</p>
+                        <p>Si vous voulez en savoir plus c'est par ici...</p>
+                        <a class="btn btn-link btn-circle" role="button" href="#a-propos"><i class="fa fa-angle-double-down animated"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="text-center content-section" id="about">
+    <section class="text-center content-section" id="a-propos">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>A Propos</h2>
-                    <p>Grayscale is a free Bootstrap theme. It can be yours right now, simply download the template on&nbsp;<a href="#">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                    <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
-                    <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+                    <h1>A Propos</h1>
+                    <p>Il y a peu de temps encore j'occupais un poste de chargé de production dans l'evenementitel audiovisuel. Après y avoir consacré beaucoup de temps et d'énergie, j'ai décider de changer de voie et de commencer une nouvelle carrière de développeur web &#129299 .</p>
+                    <p>J'aurais pu m'initier au code en autodidacte mais j'ai préféré faire appel à des pros pour réeussir cette reconverstion. J'ai donc suivi une formation intensive, et pas n'importe laquelle (la meilleur en toute objectivité), celle dispensée par <a href="https://oclock.io/formations/developpeur-web">O'clock</a> début janvier 2022 jusqu'en juillet de la même année dans la promotion Boson (la meilleur aussi evidemment).</p>
+                    <p>Pour connaitre un peu mieux mon passé sulfureux, vous pouvez télécharger ce très joli <a href="#">document</a> fais par mes soins!</p>
+                    <a class="btn btn-link btn-circle" role="button" href="#projets"><i class="fa fa-angle-double-down animated"></i></a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="text-center download-section content-section" id="download">
+    <section class="text-center download-section content-section" id="projets">
         <div class="container">
             <div class="col-lg-8 mx-auto">
                 <h1>Mes Projets</h1>
-                <p>Ici une liste des projets sur lesquels j'ai pu travailler</p><button class="btn btn-primary btn-lg btn-default" type="button">visit download page</button>
+                <p>De bons dessins (ou dans notre cas des lignes de code...) valent souvent mieux que de longues explications. Voici donc une liste de projets sur lesquels j'ai travaillé.</p>
+                <a class="btn btn-link btn-circle" role="button" href="#contact"><i class="fa fa-angle-double-down animated"></i></a>
             </div>
         </div>
     </section>
@@ -51,11 +55,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Contactez moi</h2>
+                    <h1>Contactez moi</h1>
+                    <p>N'hésitez pas, c'est gratuit et en plus je répondrais &#128512 </p>
                     <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                        <li class="list-inline-item"><button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">GitHub</span></button></li>
+                        <li class="list-inline-item"><button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></button></li>
+                        <li class="list-inline-item"><button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-envelope fa-fw"></i><span class="network-name">Email</span></button></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +68,9 @@
     </section>
     <footer>
         <div class="container text-center">
-            <p>Copyright ©&nbsp;BC 2022</p>
+            <p><a href="#">Mention légales</a></p>
+            <p>Copyright © BC 2022</p>
+            
         </div>
     </footer>
     
