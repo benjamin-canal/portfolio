@@ -1,9 +1,43 @@
 /*  Ovveride bootstrap CSS*/
 
-.card-text {
-    color: black;
+.card {
+    background-color: black;
+    border-bottom: 1%;
+    border-left: 1%;
+    border-right: 1%;
+    border-top: 1%;
+    border-color: white;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    z-index: 1;
 }
 
 .card-title {
-    color: black;
+    color : white;
+}
+
+.card-text {
+    color: white;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+}
+
+h5 {
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    position: relative;
+    z-index: 1;
 }
