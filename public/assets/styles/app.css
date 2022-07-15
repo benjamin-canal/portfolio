@@ -40,4 +40,5 @@ p {
 a {
     position: relative;
     z-index: 1;
+    text-decoration: none;
 }
