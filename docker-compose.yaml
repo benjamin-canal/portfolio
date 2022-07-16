@@ -13,8 +13,8 @@ services:
             - portfolio
 
     adminer:
-        image: adminer
-        container_name: adminer-symfony
+        image: mysql
+        container_name: mysql-symfony
         restart: always
         depends_on:
             - db
