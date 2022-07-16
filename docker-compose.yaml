@@ -12,9 +12,9 @@ services:
         networks:
             - portfolio
 
-    adminer:
-        image: mysql
-        container_name: mysql-symfony
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin-symfony
         restart: always
         depends_on:
             - db
