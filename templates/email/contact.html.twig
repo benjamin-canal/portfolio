@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EmailController!{% endblock %}
+
+{% block body %}
+
+
+
+
+<h2>Ajouter une critique sur le film </h2>
+
+        <div class="row mb-2">
+
+            <div class="col">
+                {{ form_start(form, {'attr': {'novalidate': 'novalidate', 'id': 'form__review'}}) }}
+
+                {# Rend tous les champs du formulaire #}
+                {{ form_widget(form) }}
+
+                <button type="submit" class="btn btn-success">Envoyer</button>
+
+                {{ form_end(form) }}
+            </div>
+
+        </div>
+</div>
+
+{% endblock %}
