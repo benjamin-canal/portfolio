@@ -1,4 +1,4 @@
-/*  Ovveride bootstrap CSS*/
+/*  Overide bootstrap CSS*/
 
 .card {
     background-color: black;
@@ -41,4 +41,15 @@ a {
     position: relative;
     z-index: 1;
     text-decoration: none;
+}
+
+#contact_form_text {
+    height: 175px;
+    overflow:auto
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
