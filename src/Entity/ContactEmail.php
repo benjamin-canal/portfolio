@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\ContactEmailRepository;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ContactEmailRepository::class)
@@ -26,26 +27,43 @@ class ContactEmail
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Email(
+     *     message = "L' email {{ value }} n'est pas une adresse email valide.")
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(
+     *      max = 50,
+     *      maxMessage = "L'objet de l'émail ne peut pas dépasser {{ limit }} caractères")
      */
     private $subject;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Length(
+     *      max = 50,
+     *      maxMessage = "Votre prénom ne peut pas dépasser {{ limit }} caractères")
      */
     private $firstName;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Length(
+     *      max = 50,
+     *      maxMessage = "Votre nom ne peut pas dépasser {{ limit }} caractères")
      */
     private $lastName;
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\NotBlank
+     * @Assert\Length(
+     *      max = 700,
+     *      maxMessage = "Le contenu de l'email ne peut pas dépasser {{ limit }} caractères")
      */
     private $text;
 

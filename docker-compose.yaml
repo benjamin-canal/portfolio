@@ -1,0 +1,54 @@
+version: "3.3"
+services:
+
+    db:
+        image: mysql
+        container_name: db-symfony
+        restart: always
+        volumes:
+            - db-data:/var/lib/mysql
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        networks:
+            - portfolio
+
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin-symfony
+        restart: always
+        depends_on:
+            - db
+        ports:
+            - 7000:80
+        environment:
+            PMA_HOST: db
+        networks:
+            - portfolio
+
+    maildev:
+        image: maildev/maildev
+        container_name: maildev-symfony
+        command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
+        ports:
+          - "7001:80"
+        restart: always
+        networks:
+            - portfolio
+
+    www:
+        build: php
+        container_name: portfolio-symfony
+        ports:
+          - "7741:80"
+        volumes:
+            - ./php/vhosts:/etc/apache2/sites-enabled
+            - ./:/var/portfolio_symfony/portfolio
+        restart: always
+        networks:
+            - portfolio
+
+networks:
+    portfolio:
+
+volumes:
+    db-data:
