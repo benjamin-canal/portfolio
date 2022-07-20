@@ -12,9 +12,9 @@ services:
         networks:
             - portfolio
 
-    adminer:
-        image: adminer
-        container_name: adminer-symfony
+    phpmyadmin:
+        image: phpmyadmin
+        container_name: phpmyadmin-symfony
         restart: always
         depends_on:
             - db
@@ -42,7 +42,7 @@ services:
           - "7741:80"
         volumes:
             - ./php/vhosts:/etc/apache2/sites-enabled
-            - ./:/var/www/html/portfolio
+            - ./:/var/portfolio_symfony/portfolio
         restart: always
         networks:
             - portfolio
