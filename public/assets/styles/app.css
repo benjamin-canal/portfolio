@@ -1,4 +1,4 @@
-/*  Overide bootstrap CSS*/
+/*  Override bootstrap CSS*/
 
 .card {
     background-color: black;
@@ -46,6 +46,11 @@ a {
 #contact_form_text {
     height: 175px;
     overflow:auto
+}
+
+#contact_form {
+    position: relative;
+    z-index: 1;
 }
 
 footer {
