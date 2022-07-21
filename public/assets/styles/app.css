@@ -37,7 +37,7 @@ p {
     z-index: 1;
 }
 
-a {
+a:link {
     position: relative;
     z-index: 1;
     text-decoration: none;
