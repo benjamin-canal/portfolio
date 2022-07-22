@@ -25,16 +25,6 @@ services:
         networks:
             - portfolio
 
-    maildev:
-        image: maildev/maildev
-        container_name: maildev-symfony
-        command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
-        ports:
-          - "7001:80"
-        restart: always
-        networks:
-            - portfolio
-
     www:
         build: php
         container_name: portfolio-symfony

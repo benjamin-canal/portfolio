@@ -12,8 +12,6 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Mailer\Event\MessageEvents;
-use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 
 class EmailController extends AbstractController
 {
@@ -69,7 +67,6 @@ class EmailController extends AbstractController
 
         }
 
-        
         return $this->renderForm('email/contact.html.twig', [
             'form' => $form,
         ]);

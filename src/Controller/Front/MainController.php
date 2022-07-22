@@ -17,4 +17,14 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
         ]);
     }
+
+    /**
+     * @Route("/mentions-legales", name="legal-mentions")
+     */
+    public function legalMentions(): Response
+    {
+        return $this->render('front/main/legal-mentions.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }

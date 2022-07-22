@@ -1,21 +1,21 @@
 /*  Override bootstrap CSS*/
 
 .card {
-    background-color: black;
-    border-bottom: 1%;
-    border-left: 1%;
-    border-right: 1%;
-    border-top: 1%;
-    border-color: white;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 1%;
     z-index: 1;
+    size: 18rem;
+}
+
+.card-body {
+    background-color: rgb(27, 27, 27);
+    margin: 1px;
 }
 
 .card-title {
-    color : white;
+    color :white;
+}
+
+.card-img-top {
+    padding: 1px;
 }
 
 .card-text {
@@ -32,9 +32,11 @@ h5 {
     z-index: 1;
 }
 
-p {
+p { 
+    text-align: justify, center;
     position: relative;
     z-index: 1;
+
 }
 
 a:link {
