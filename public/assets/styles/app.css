@@ -1,25 +1,24 @@
 /*  Override bootstrap CSS*/
 
-.card {
+#card {
     z-index: 1;
-    size: 18rem;
+    width: 20rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .card-body {
     background-color: rgb(27, 27, 27);
-    margin: 1px;
+    margin-bottom: 0;
 }
 
 .card-title {
     color :white;
 }
 
-.card-img-top {
-    padding: 1px;
-}
-
 .card-text {
     color: white;
+    text-align: justify;
 }
 
 h1 {
@@ -33,10 +32,9 @@ h5 {
 }
 
 p { 
-    text-align: justify, center;
     position: relative;
     z-index: 1;
-
+    text-align: center;
 }
 
 a:link {

@@ -20,10 +20,10 @@ class ContactFormType extends AbstractType
     {
         $builder
             ->add('email', EmailType::class, [
-                'label' => 'Votre email',
+                'label' => 'Votre adresse email',
             ])
             ->add('subject', TextType::class, [
-                'label' => 'Objet de l\'email',
+                'label' => 'Objet',
             ])
             ->add('firstName', TextType::class, [
                 'label' => 'Votre prénom',
