@@ -58,3 +58,9 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+img {
+    position: relative;
+    width: 16rem;
+    z-index: 1;
+}
