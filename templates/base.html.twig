@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" type="image/png" href="../public/assets/img/logo.png" />
+        <link rel="icon" type="image/png" href="../public/assets/img/{{ (app.request.get('_route') == 'home' and 'legal-mentions') ? 'logo.png' : 'email.png' }}" />
         <link rel="stylesheet" href="../public/assets/styles/app.css">
         <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
