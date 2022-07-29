@@ -3,8 +3,7 @@
 #card {
     z-index: 1;
     width: 20rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 }
 
 .card-body {
@@ -18,7 +17,12 @@
 
 .card-text {
     color: white;
-    text-align: justify;
+}
+
+.card-img-top {
+    width: auto;
+    height: 14rem;
+    object-fit: cover;
 }
 
 section {

@@ -2,7 +2,7 @@
 const options = {
         /* omissis, this is the main options object */
         responsive: [
-            {
+            {   
                 maxWidth: 500,
                     options: { 
                         interactivity: {
@@ -175,6 +175,7 @@ const options = {
                     },
                 },
             },
+            
         ],
 };
 
