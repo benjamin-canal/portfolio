@@ -21,25 +21,13 @@
     text-align: justify;
 }
 
-h1 {
-    position: relative;
-    z-index: 1;
-}
-
-h5 {
-    position: relative;
-    z-index: 1;
-}
-
-p { 
+section {
     position: relative;
     z-index: 1;
     text-align: center;
 }
 
 a:link {
-    position: relative;
-    z-index: 1;
     text-decoration: none;
 }
 
