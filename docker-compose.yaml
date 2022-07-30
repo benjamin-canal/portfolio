@@ -32,7 +32,7 @@ services:
           - "7741:80"
         volumes:
             - ./php/vhosts:/etc/apache2/sites-enabled
-            - ./:/var/portfolio_symfony/portfolio
+            - ./:/var/www/portfolio_symfony/portfolio
         restart: always
         networks:
             - portfolio
